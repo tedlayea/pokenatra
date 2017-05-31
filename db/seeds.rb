@@ -3,6 +3,7 @@ require 'active_record'
 require 'pg'
 require_relative 'connection'
 require_relative '../models/pokemon'
+require_relative '../models/trainer'
 
 Pokemon.destroy_all
 Pokemon.create(name: "Charmander", cp: rand(800), poke_type: "fire", img_url: "https://img.pokemondb.net/artwork/charmander.jpg")
@@ -13,3 +14,10 @@ Pokemon.create(name: "Clefairy", cp: rand(800), poke_type: "fairy", img_url: "ht
 Pokemon.create(name: "Nidoking", cp: rand(800), poke_type: "poison ground", img_url: "https://img.pokemondb.net/artwork/nidoking.jpg")
 Pokemon.create(name: "Gengar", cp: rand(800), poke_type: "ghost poison", img_url: "https://img.pokemondb.net/artwork/gengar.jpg")
 Pokemon.create(name: "Blastoise", cp: rand(800), poke_type: "water", img_url: "https://img.pokemondb.net/artwork/blastoise.jpg")
+
+
+Trainer.destroy_all
+Trainer.create(name: "abc", level: 1, img_url: "https://img.pokemondb.net/artwork/charmander.jpg")
+Trainer.create(name: "def", level: 3, img_url: "https://img.pokemondb.net/artwork/squirtle.jpg")
+Trainer.create(name: "ghi", level: 2, img_url: "https://img.pokemondb.net/artwork/charmander.jpg")
+Trainer.create(name: "jkl", level: 4, img_url: "https://img.pokemondb.net/artwork/squirtle.jpg")

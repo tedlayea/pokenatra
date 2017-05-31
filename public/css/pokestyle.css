@@ -13,6 +13,7 @@ a, p, h2, h3 {
   -webkit-text-stroke: 2px rgb(55, 95, 200);
   text-decoration: none;
   border-radius: 100px;
+  font-size: 27px;
 }
 
 
@@ -38,9 +39,27 @@ a:hover {
   text-align: center;
   justify-content: center;
 }
+.edit_delete{
+  position: relative;
+  top:-550px;
+  left: 45px;
+}
+.button-delete{
 
+  font-size: 40px;
+
+  position: relative;
+  left:400px;
+  top:100px;
+
+}
 .pokemon{
-  min-width: 375px;
+  position: relative;
+  left:400px;
+  top:-100px;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
   background-color: rgb(255, 255, 255);
   padding: 10px;
   margin: 40px;

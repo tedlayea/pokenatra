@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS pokemons;
+DROP TABLE IF EXISTS trainers;
 
 CREATE TABLE pokemons (
   id SERIAL PRIMARY KEY,
@@ -8,12 +9,12 @@ CREATE TABLE pokemons (
   img_url VARCHAR
 );
 
--- CREATE TABLE trainer (
---   id SERIAL PRIMARY KEY,
---   name VARCHAR,
---   level VARCHAR,
---   img_url VARCHAR
--- );
+CREATE TABLE trainers (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR,
+  level INT,
+  img_url VARCHAR
+);
 
 -- CREATE TABLE team (
 --   id SERIAL PRIMARY KEY,
