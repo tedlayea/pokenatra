@@ -1,0 +1,18 @@
+<h2> You can edit  or change your information here:</h2>
+<form action="/<%= @specficpokemon.id%>/edit" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label for="specficpokemon[name]">Name:</label>
+  <input name="specficpokemon[name]" value="<%= @specficpokemon.name %>">
+
+  <label for="specficpokemon[poke_type]">Poke Type:</label>
+  <input name="specficpokemon[poke_type]" value="<%= @specficpokemon.poke_type %>">
+
+  <label for="specficpokemon[cp]">cp:</label>
+  <input name="specficpokemon[cp]" value="<%= @specficpokemon.cp %>">
+
+  <label for="specficpokemon[img_url]">Image url:</label>
+  <input name="nspecficpokemon[img_url]" value="<%= @specficpokemon.img_url %>">
+
+  <input type="submit" value="Update">
+</form>

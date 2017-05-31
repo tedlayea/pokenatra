@@ -1,0 +1,10 @@
+<h2><a href="/">All Pokemon</a></h2>
+<div class="pokemon">
+  <p>Pokemon Name: <%= @specficpokemon.name %></p>
+  <p>Pokemon poke_type: <%= @specficpokemon.poke_type %></p>
+  <p>Pokemon cp: <%= @specficpokemon.cp %></p>
+  <img src='<%= @specficpokemon.img_url %>'>
+</div>
+
+<p><a href='/<%= @specficpokemon.id%>/edit'> Edit Pokemon </a></p>
+<p><a href='/<%= @specficpokemon.id%>/delete'> Delete Pokemon </a></p>
